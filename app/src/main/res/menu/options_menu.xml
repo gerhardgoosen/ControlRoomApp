@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_context_menu">
+
+
+    <group android:id="@+id/group_general_options">
+        <item
+            android:id="@+id/start_scanner_button"
+            android:title="@string/menu_start_scanner" />
+    </group>
+
+    <group
+        android:checkableBehavior="none"
+        android:enabled="false">
+        <item
+            android:id="@+id/menu_gap_2"
+            android:enabled="false"
+            android:title="@string/hr" />
+    </group>
+
+
+
+</menu>

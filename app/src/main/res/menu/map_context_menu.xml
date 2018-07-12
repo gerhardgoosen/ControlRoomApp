@@ -1,0 +1,135 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_context_menu">
+    <!-- menu group -->
+
+    <group android:id="@+id/group_general_options">
+        <item
+            android:id="@+id/start_scanner_button"
+            android:title="@string/menu_start_scanner" />
+    </group>
+
+    <group
+        android:checkableBehavior="none"
+        android:enabled="false">
+        <item
+            android:enabled="false"
+            android:title="@string/hr" />
+    </group>
+
+    <group android:id="@+id/group_db_options">
+        <item
+            android:id="@+id/print_db_data_button"
+            android:title="@string/menu_print_db" />
+    </group>
+
+    <group
+        android:checkableBehavior="none"
+        android:enabled="false">
+        <item
+            android:enabled="false"
+            android:title="@string/hr" />
+    </group>
+
+    <group android:id="@+id/group_alarm_options">
+        <group android:id="@+id/group_start_panic_alarm">
+            <item
+                android:id="@+id/start_panic_alarm_button"
+                android:title="@string/menu_start_panic" />
+        </group>
+        <group android:id="@+id/group_stop_panic_alarm">
+            <item
+                android:id="@+id/stop_panic_alarm_button"
+                android:title="@string/menu_stop_panic" />
+        </group>
+    </group>
+
+    <group
+        android:checkableBehavior="none"
+        android:enabled="false">
+        <item
+            android:enabled="false"
+            android:title="@string/hr" />
+    </group>
+
+    <group android:id="@+id/group_report_options">
+        <group android:id="@+id/group_report_incident">
+            <item
+                android:id="@+id/report_item_button"
+                android:title="@string/menu_report" />
+        </group>
+    </group>
+
+    <group
+        android:checkableBehavior="none"
+        android:enabled="false">
+        <item
+            android:enabled="false"
+            android:title="@string/hr" />
+    </group>
+
+    <group android:id="@+id/group_route_options">
+        <group android:id="@+id/group_start_route_options">
+            <item
+                android:id="@+id/recordpatrol_item_button"
+                android:title="@string/menu_recordpatrol" />
+        </group>
+        <group android:id="@+id/group_stop_route_options">
+            <item
+                android:id="@+id/stoprecordpatrol_item_button"
+                android:title="@string/menu_stoprecordpatrol" />
+        </group>
+    </group>
+
+    <group
+        android:checkableBehavior="none"
+        android:enabled="false">
+        <item
+            android:enabled="false"
+            android:title="@string/hr" />
+    </group>
+
+    <group
+        android:id="@+id/group_kml_options"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/show_municipailty_item_button"
+            android:title="@string/menu_show_municipality" />
+        <item
+            android:id="@+id/show_ward_item_button"
+            android:title="@string/menu_show_ward" />
+
+    </group>
+
+    <group
+        android:id="@+id/group_map_options"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/map_view_item_button"
+            android:title="@string/menu_normal_map" />
+
+        <item
+            android:id="@+id/hybrid_item_button"
+            android:title="@string/menu_hybrid_map" />
+
+        <item
+            android:id="@+id/terrain_item_button"
+            android:title="@string/menu_terrain_map" />
+
+        <item
+            android:id="@+id/satellite_item_button"
+            android:title="@string/menu_satellite_map" />
+
+    </group>
+
+    <group
+        android:checkableBehavior="none"
+        android:enabled="false">
+        <item
+            android:enabled="false"
+            android:title="@string/hr" />
+    </group>
+
+
+
+
+</menu>

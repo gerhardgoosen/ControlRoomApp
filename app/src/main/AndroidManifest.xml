@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="guardmonitor.gpg.za.controlroom">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.auth.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.map.MainActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".activity.user_feedback.ReportIncidentActivity"
+            android:label="@string/title_report_incident"
+            android:parentActivityName=".activity.map.MainActivity" />
+        <activity
+            android:name=".activity.access_control.ScannerActivity"
+            android:label="@string/title_scanner"
+            android:parentActivityName=".activity.map.MainActivity" />
+        <activity
+            android:name=".activity.data.DBDataActivity"
+            android:label="@string/title_db_data"
+            android:parentActivityName=".activity.map.MainActivity" />
+        <activity
+            android:name=".activity.data.LocationDBDataActivity"
+            android:label="@string/title_db_data_locations"
+            android:parentActivityName=".activity.data.DBDataActivity" />
+        <activity
+            android:name=".activity.data.RoutesDBDataActivity"
+            android:label="@string/title_db_data_routes"
+            android:parentActivityName=".activity.data.DBDataActivity" />
+        <activity
+            android:name=".activity.data.RoutePointsDBDataActivity"
+            android:label="@string/title_db_data_route_points"
+            android:parentActivityName=".activity.data.RoutesDBDataActivity" />
+
+
+        <service android:name="guardmonitor.gpg.za.geoutils.geoFence.GeoFenceTransitionsIntentService" />
+
+        <receiver android:name=".widget.MapAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/map_app_widget_info" />
+        </receiver>
+
+
+        <activity android:name=".widget.MapAppWidgetConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="guardmonitor.gpg.za.geoutils.service.GeoUtilsService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <receiver android:name="guardmonitor.gpg.za.geoutils.service.ControlRoomBroadcastReceiver">
+            <intent-filter>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+
+        </receiver>
+
+
+    </application>
+
+</manifest>

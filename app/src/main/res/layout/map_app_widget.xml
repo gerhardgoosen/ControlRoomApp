@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09C"
+    android:padding="@dimen/widget_margin"
+    android:id="@+id/widget_controlroom">
+
+
+    <TextView
+        android:id="@+id/appwidget_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="24dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_name"
+        android:text="@string/appwidget_name"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:id="@+id/appwidget_position"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_gps"
+        android:text="@string/appwidget_gps"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        android:layout_alignTop="@+id/appwidget_name" />
+
+    <TextView
+        android:id="@+id/appwidget_speed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_speed"
+        android:text="@string/appwidget_speed"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        android:layout_alignTop="@+id/appwidget_position" />
+
+    <TextView
+        android:id="@+id/appwidget_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_time"
+        android:text="@string/appwidget_time"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        android:layout_alignTop="@+id/appwidget_speed" />
+
+    <Button
+        android:id="@+id/button_open_controlroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        android:text="@string/open_app" />
+
+</RelativeLayout>

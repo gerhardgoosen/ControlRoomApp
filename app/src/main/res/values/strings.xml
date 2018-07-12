@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">ControlRoom</string>
+    <string name="open_app">Open Control Room</string>
+
+    <!-- View Titles -->
+    <string name="title_activity_maps">Map</string>
+    <string name="title_login">Login / Sign up</string>
+    <string name="title_report_incident">Report Incident</string>
+    <string name="title_scanner">ID/Drivers Licence Scanner</string>
+    <string name="title_db_data">DB DATA</string>
+    <string name="title_db_data_routes">Routes</string>
+    <string name="title_db_data_route_points">Route Points</string>
+    <string name="title_db_data_locations">Locations</string>
+
+    <!-- Strings related to views -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+
+    <!-- Validations Texts -->
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <!-- Permission Texts -->
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
+
+
+    <!-- Buttons Names -->
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_report">Report Incident</string>
+    <string name="action_scan">Scan</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_open">Open</string>
+    <string name="action_see_route">See Route</string>
+
+    <string name="action_dbview_routes">Routes Data</string>
+    <string name="action_dbview_locations">Location Data</string>
+
+
+    <!-- Menu Buttons strings -->
+
+    <string name="menu_start_scanner">ID/Drivers Licence Scanner</string>
+    <string name="menu_print_db">DB Data</string>
+
+    <string name="menu_start_panic">Panic Alarm</string>
+    <string name="menu_stop_panic">Cancel Panic Alarm</string>
+
+    <string name="menu_recordpatrol">Record Patrol Route</string>
+    <string name="menu_stoprecordpatrol">Stop Recording Patrol Route</string>
+
+    <string name="menu_report">Report Incident</string>
+
+    <string name="menu_normal_map">Normal Map</string>
+    <string name="menu_satellite_map">Satellite Map</string>
+    <string name="menu_hybrid_map">Hybrid Map</string>
+    <string name="menu_terrain_map">Terrain Map</string>
+
+    <string name="menu_show_municipality">Show Municipality</string>
+    <string name="menu_show_ward">Show Ward</string>
+
+    <!-- GeoFence Transition type strings -->s
+    <string name="geofence_transition_entered">Entered</string>
+    <string name="geofence_transition_exited">Exited</string>
+    <string name="unknown_geofence_transition">Unknown Transition</string>
+
+    <string name="geofence_transition_notification_text">Click notification to return to app</string>
+
+
+    <!-- Error strings -->
+    <string name="not_connected">GoogleApiClient no yet connected. Try again.</string>
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">
+        You have provided too many PendingIntents to the addGeofences() call
+    </string>
+    <string name="unknown_geofence_error">
+        Unknown error: the Geofence service is not available now
+    </string>
+    <string name="geofence_transition_invalid_type">
+        Geofence transition error: invalid transition type %1$d
+    </string>
+
+    <!-- Generic strings  -->
+    <string name="hr">________________________________</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="appwidget_name">Control Room</string>
+    <string name="appwidget_gps">Lat/Lng : </string>
+    <string name="appwidget_speed">Speed : </string>
+    <string name="appwidget_time">Time : </string>
+
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="appwidget_text">EXAMPLE</string>
+
+</resources>
